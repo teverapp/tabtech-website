@@ -35,7 +35,7 @@ function LandingPage() {
 
   return (
     <>
-      <section className="flex items-center flex-col justify-center w-full bg-[url('./Pattern1.jpg')] bg-cover bg-center">
+      <section className="flex items-center flex-col justify-center w-full bg-[url('/Pattern1.jpg')] bg-cover bg-center">
         <div className="flex items-center px-[4vw] py-[15vw] justify-center w-full h-full inset-0 bg-[#FFFFFF]/90">
           <div className="flex justify-center items-center flex-col w-full h-auto gap-[4vw]">
             <div className="flex flex-col justify-between w-full h-auto gap-[2vw] items-center">
