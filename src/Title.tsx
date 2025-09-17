@@ -10,7 +10,7 @@ function Title({ name }: TitleProps) {
           {name}
         </span>
       </div>
-      <div className="w-full h-[12%] bg-[url('./NavigationPattern.jpg')]" />
+      <div className="w-full h-[12%] bg-[url('/NavigationPattern.jpg')]" />
     </section>
   );
 }
