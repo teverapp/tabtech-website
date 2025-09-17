@@ -78,7 +78,7 @@ function AboutUs() {
           </p>
         </div>
         <div className="w-full h-full flex items-center justify-center ">
-          <div className="bg-cover w-full h-full bg-center bg-[url('./FirstAboutImage.jpg')]" />
+          <div className="bg-cover w-full h-full bg-center bg-[url('/FirstAboutImage.jpg')]" />
         </div>
       </section>
       <section
@@ -108,7 +108,7 @@ function AboutUs() {
       </section>
       <section className="grid sm:grid-cols-2 grid-cols-1 justify-center item-center w-full mt-[8vw] px-[10vw]">
         <div className="w-full h-[60vw] flex items-center justify-center">
-          <div className="w-full h-full bg-cover bg-[url('./SecondAboutImage.jpg')] bg-center" />
+          <div className="w-full h-full bg-cover bg-[url('/SecondAboutImage.jpg')] bg-center" />
         </div>
         <div className="flex flex-col justify-center items-center w-full h-fit py-[1vw] px-[3vw] gap-[0.5vw]">
           <span className="font-anybody font-semibold text-2xl">
@@ -126,7 +126,7 @@ function AboutUs() {
           </div>
         </div>
       </section>
-      <section className="w-full h-[40%] bg-black bg-[url('./Pattern3.jpg')] bg-cover bg-center mt-[8vw]">
+      <section className="w-full h-[40%] bg-black bg-[url('/Pattern3.jpg')] bg-cover bg-center mt-[8vw]">
         <div className="flex w-full h-full flex-col items-center justify-center inset-0 bg-[#242424E5]/95 gap-[5vw] p-[4vw]">
           <div className="flex justify-center flex-col items-center w-full h-auto gap-[2vw] px-[20vw] text-center">
             <span className="font-anybody font-semibold text-4xl text-[#E1781F] leading-[120%]">
