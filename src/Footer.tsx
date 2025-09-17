@@ -91,7 +91,7 @@ function Footer() {
           </p>
         </div>
       </section>
-      <section className="w-full h-[20vw] bg-[url('./NavigationPattern.jpg')]" />
+      <section className="w-full h-[20vw] bg-[url('/NavigationPattern.jpg')]" />
     </>
   );
 }

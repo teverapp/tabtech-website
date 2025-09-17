@@ -74,7 +74,7 @@ function LandingPage() {
           </div>
         </div>
       </section>
-      <section className="bg-center bg-cover w-full bg-black bg-[url('./NavigationPattern.jpg')] bg-cover bg-center">
+      <section className="bg-center bg-cover w-full bg-black bg-[url('/NavigationPattern.jpg')] bg-cover bg-center">
         <div className="flex w-full px-[2vw] py-[8vw] items-center justify-center inset-0 bg-[#242424E5]/90 flex flex-col gap-[2vw] text-center">
           <span className="font-anybody text-[#E1781F] font-semibold text-4xl leading-[120%]">
             TABTech bridges these gaps.
@@ -89,7 +89,7 @@ function LandingPage() {
         </div>
       </section>
       <section className="grid grid-cols-[1fr_6fr_1fr] bg-[#242424] justify-center items-center w-full">
-        <div className="bg-center bg-cover h-full bg-[url('./NavigationPattern.jpg')]" />
+        <div className="bg-center bg-cover h-full bg-[url('/NavigationPattern.jpg')]" />
         <div className="flex flex-col h-auto gap-[4vw] items-center justify-center p-[5vw]">
           <div className="flex justify-center text-center items-center w-full">
             <p className="text-[#E1781F] font-anybody font-semibold text-4xl">
@@ -133,9 +133,9 @@ function LandingPage() {
             </div>
           </div>
         </div>
-        <div className="bg-center bg-cover h-full bg-[url('./NavigationPattern.jpg')]" />
+        <div className="bg-center bg-cover h-full bg-[url('/NavigationPattern.jpg')]" />
       </section>
-      <section className="w-full bg-[#FAFAFA] bg-[url('./Pattern1.jpg')] bg-cover bg-center">
+      <section className="w-full bg-[#FAFAFA] bg-[url('/Pattern1.jpg')] bg-cover bg-center">
         <div className="p-[8vw] flex justify-center items-center w-full h-full inset-0 bg-[#FAFAFA]/95 flex-col gap-[4vw]">
           <p className="font-anybody font-semibold sm:text-5xl text-4xl leading-[120%] text-[#242424]">
             The stories we tell
@@ -173,7 +173,7 @@ function LandingPage() {
           </div>
         </div>
       </section>
-      <section className="w-full h-[50vw] sm:h-[20vw] bg-cover bg-center bg-[url('./NavigationPattern.jpg')]" />
+      <section className="w-full h-[50vw] sm:h-[20vw] bg-cover bg-center bg-[url('/NavigationPattern.jpg')]" />
       <section className="gap-[4vw] sm:gap-[2vw] flex flex-col justify-center items-center w-full bg-[#FAFAFA] p-[5vw]">
         <span className="font-anybody font-semibold text-4xl leading-[120%] text-[#242424]">
           What we do

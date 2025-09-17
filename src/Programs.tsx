@@ -13,7 +13,7 @@ function Programs() {
       <section className="px-[10vw] flex flex-col  justify-center item-center py-[5vw] gap-[10vw]">
         <div className="grid grid-cols-1 sm:grid-cols-2 justify-center items-center w-full gap-[2vw]">
           <div className="w-full h-[60vw] flex sm:hidden items-center justify-center">
-            <div className="bg-center w-full h-full bg-cover bg-[url('./Programs1.jpg')]" />
+            <div className="bg-center w-full h-full bg-cover bg-[url('/Programs1.jpg')]" />
           </div>
           <div className="flex-col flex gap-[1vw] p-[2vw]">
             <span className="font-anybody font-semibold text-3xl leading-[120%] text-[#242424]">
@@ -51,7 +51,7 @@ function Programs() {
             </div>
           </div>
           <div className="w-full h-full hidden sm:flex items-center justify-center">
-            <div className="bg-center w-full h-full bg-cover bg-[url('./Programs1.jpg')]" />
+            <div className="bg-center w-full h-full bg-cover bg-[url('/Programs1.jpg')]" />
           </div>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 justify-center items-center w-full gap-[2vw]">
@@ -94,7 +94,7 @@ function Programs() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 justify-center items-center w-full gap-[2vw]">
           <div className="w-full h-[60vw] sm:hidden flex items-center justify-center">
-            <div className="bg-center w-full h-full bg-cover bg-[url('./Programs2.jpg')]" />
+            <div className="bg-center w-full h-full bg-cover bg-[url('/Programs2.jpg')]" />
           </div>
           <div className="flex-col flex gap-[1vw] p-[2vw]">
             <span className="font-anybody font-semibold text-3xl leading-[120%] text-[#242424]">
@@ -131,7 +131,7 @@ function Programs() {
             </div>
           </div>
           <div className="w-full h-full hidden sm:flex items-center justify-center">
-            <div className="bg-center w-full h-full bg-cover bg-[url('./Programs2.jpg')]" />
+            <div className="bg-center w-full h-full bg-cover bg-[url('/Programs2.jpg')]" />
           </div>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 justify-center items-center w-full gap-[2vw] h-full">
