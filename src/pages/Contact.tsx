@@ -1,10 +1,10 @@
-import Title from "./Title";
-import LastSection from "./LastSection";
+import Title from "../components/Title";
+import LastSection from "../components/LastSection";
 function Contact() {
   return (
     <>
       <Title name="Contact" />
-      <section className="grid sm:grid-cols-2 grid-cols-1 gap-[2vw] w-full py-[5vw] px-[10vw] justify-center items-center">
+      <section className="grid sm:grid-cols-2 grid-cols-1 gap-[2vw] w-full py-[5vw] px-[5vw] sm:px-[10vw] justify-center items-center">
         <div className="sm:hidden flex w-full h-[100vw] bg-[#E7E7E7]" />
         <div className="flex flex-col justify-center w-full p-[2vw] gap-[5vw] sm:gap-[2vw] items-center">
           <div className="gap-[2vw] flex flex-col justify-center w-full text-[#4F4F4F] border-b-1 border-b-[#E7E7E7] pb-[1vw]">

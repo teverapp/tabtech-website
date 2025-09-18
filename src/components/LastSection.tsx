@@ -6,7 +6,7 @@ function LastSection() {
   ];
 
   return (
-    <section className="flex gap-[4vw] flex-col py-[8vw] px-[25vw] justify-center items-center bg-[#242424] w-full">
+    <section className="flex gap-[4vw] flex-col py-[8vw] px-[10vw] sm:px-[25vw] justify-center items-center bg-[#242424] w-full">
       <div className="flex justify-center flex-col items-center w-full h-auto gap-2">
         <span className="text-center font-anybody font-semibold text-4xl text-[#E1781F] leading-[120%]">
           Be part of Africa’s tech future

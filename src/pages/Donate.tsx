@@ -1,11 +1,11 @@
-import Title from "./Title";
-import dropdown from "./assets/dropdown.svg";
-import LastSection from "./LastSection";
+import Title from "../components/Title";
+import dropdown from "../assets/dropdown.svg";
+import LastSection from "../components/LastSection";
 function Donate() {
   return (
     <>
       <Title name="Donate to TABTech" />
-      <section className="text-[#4F4F4F] text-center sm:text-start flex w-full px-[10vw] gap-[2vw] mt-[5vw] flex-col">
+      <section className="text-[#4F4F4F] text-center sm:text-start flex w-full px-[5vw] sm:px-[10vw] gap-[2vw] mt-[5vw] flex-col">
         <span className="font-inter text-2xl leading-[140%]">
           Africa’s tech future is being built today by young innovators,
           designers, engineers, and entrepreneurs across the continent.But too
@@ -60,7 +60,7 @@ function Donate() {
         </div>
         <div className="w-full hidden h-full sm:flex bg-[#E7E7E7]" />
       </section>
-      <section className="flex pt-[7vw] pb-[5vw] px-[10vw] sm:px-[20vw] flex-col justify-center items-center mt-[10vw] w-full mt-[10vw] sm:mt-[5vw] bg-[#FDF7ED] gap-[2vw]">
+      <section className="flex pt-[7vw] pb-[5vw] px-[5vw] sm:px-[20vw] flex-col justify-center items-center mt-[10vw] w-full mt-[10vw] sm:mt-[5vw] bg-[#FDF7ED] gap-[2vw]">
         <span className="font-semibold font-anybody text-[#242424] text-3xl leading-[120%]">
           Ways to give
         </span>
@@ -116,7 +116,7 @@ function Donate() {
           programs that unlock Africa’s tech potential.
         </span>
       </section>
-      <section className="px-[10vw] py-[5vw] grid grid-cols-1 sm:grid-cols-2 gap-[4vw] w-full justify-center items-center">
+      <section className="sm:px-[10vw] px-[5vw] py-[5vw] grid grid-cols-1 sm:grid-cols-2 gap-[4vw] w-full justify-center items-center">
         <div className="lg:hidden flex w-full h-[100vw] bg-[#E7E7E7]" />
         <div className="flex flex-col justify-center  w-full h-full p-[2vw] gap-[5vw] bg-[#FDF7ED]">
           <span className="font-inter font-bold text-xl leading-[120%]">

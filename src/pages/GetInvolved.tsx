@@ -1,7 +1,7 @@
-import dropdown from "./assets/dropdown.svg";
-import Title from "./Title";
+import dropdown from "../assets/dropdown.svg";
+import Title from "../components/Title";
 import { useState } from "react";
-import LastSection from "./LastSection";
+import LastSection from "../components/LastSection";
 function GetInvolved() {
   const [isOpen1, setIsOpen1] = useState(false);
   const [isOpen2, setIsOpen2] = useState(false);
@@ -30,7 +30,7 @@ function GetInvolved() {
   return (
     <>
       <Title name="Get Involved" />
-      <section className="grid sm:grid-cols-2 grid-cols-1 justify-center items-center w-full px-[10vw] py-[5vw] gap-5">
+      <section className="grid sm:grid-cols-2 grid-cols-1 justify-center items-center w-full px-[5vw] sm:px-[10vw] py-[5vw] gap-5">
         <div className="flex sm:hidden w-full h-[80vw] bg-[#E7E7E7]" />
         <div className="flex flex-col justify-center items-center w-full p-[2vw] gap-[4vw]">
           <div className="w-full border-b-1 pb-[4vw] border-[#E7E7E7]">
@@ -93,7 +93,7 @@ function GetInvolved() {
                 <label className="font-inter text-[#242424] font-semibold text-sm leading-[140%]">
                   How would you like to get involved?
                 </label>
-                <div className="flex bg-white h-[48px] border-[#EFEFEF] border-1">
+                <div className="flex border-[#EFEFEF] border-1">
                   <input
                     type="text"
                     placeholder="Choose all that apply"
@@ -153,7 +153,7 @@ function GetInvolved() {
                   <input
                     type="text"
                     placeholder="Choose an option"
-                    className="w-full text-sm placeholder:text-[#888888] p-[0.7vw] bg-[#FFFFFF]"
+                    className="text-sm w-full placeholder:text-[#888888] border-[#EFEFEF] border-1 p-[0.7vw] bg-[#FFFFFF]"
                   />
                   <div
                     onClick={() => {
@@ -165,13 +165,13 @@ function GetInvolved() {
                     <img
                       src={dropdown}
                       alt="drop-down"
-                      className={`w-[4vw] cursor-pointer text-sm h-full border-white bg-[#FFFFFF] border-b-1 border-t-1 border-r-1 p-[1.2vw] transition-transform duration-300 ease-in-out transform ${
-                        isOpen2 ? "rotate-180" : "rotate-0"
+                      className={`w-[4vw] text-sm h-full cursor-pointer border-white bg-[#FFFFFF] border-b-1 border-t-1 border-r-1 p-[1.2vw] transition-transform duration-300 ease-in-out transform ${
+                        isOpen3 ? "rotate-180" : "rotate-0"
                       }`}
                     />
                   </div>
                   {isOpen2 && (
-                    <div className="absolute mt-1 pr-[20vw] bg-white border border-gray-300 rounded text-[#4F4F4F] shadow-lg z-10">
+                    <div className="absolute mt-[1vw] pr-[20vw] bg-white border border-gray-300 rounded text-[#4F4F4F] shadow-lg z-10">
                       <ul className="flex flex-col p-2 gap-2">
                         {option2.map((option, index) => (
                           <li key={index} className="flex items-center gap-2">

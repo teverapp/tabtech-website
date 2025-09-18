@@ -1,11 +1,11 @@
-import Title from "./Title";
+import Title from "../components/Title";
 import { Link as RouterLink } from "react-router-dom";
-import LastSection from "./LastSection";
+import LastSection from "../components/LastSection";
 function Impact() {
   return (
     <>
       <Title name="Impact" />
-      <section className="grid sm:grid-cols-2 grid-cols-1 justify-center items-center w-full py-[5vw] px-[10vw] gap-[4vw]">
+      <section className="grid sm:grid-cols-2 grid-cols-1 justify-center items-center w-full py-[5vw] px-[5vw] sm:px-[10vw] gap-[4vw]">
         <div className="w-full sm:hidden flex h-[80vw] bg-[#E7E7E7]" />
         <div className="flex justify-center flex-col items-center w-full p-[2vw] gap-[3vw]">
           <div className="flex flex-col border-b-1 border-b-[#E7E7E7] pb-[2vw] gap-[0.1vw]">
