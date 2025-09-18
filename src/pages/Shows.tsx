@@ -1,11 +1,11 @@
-import Title from "./Title";
+import Title from "../components/Title";
 import { Link as ScrollLink } from "react-scroll";
-import LastSection from "./LastSection";
+import LastSection from "../components/LastSection";
 function Shows() {
   return (
     <>
       <Title name="Shows" />
-      <section className="flex flex-col justify-center items-center w-full px-[10vw] mt-[5vw] mb-[5vw] gap-[5vw]">
+      <section className="flex flex-col justify-center items-center w-full sm:px-[10vw] px-[5vw] mt-[5vw] mb-[5vw] gap-[5vw]">
         <div
           id="first-show"
           className="grid grid-cols-1 sm:grid-cols-2 justify-center items-center w-full  gap-[2vw]"

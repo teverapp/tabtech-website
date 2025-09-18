@@ -1,10 +1,10 @@
-import TabTech from "./assets/TabTech.svg";
-import tiktok from "./assets/tiktok.svg";
-import twitter from "./assets/twitter.svg";
-import youtube from "./assets/youtube.svg";
-import facebook from "./assets/facebook.svg";
-import instagram from "./assets/instagram.svg";
-import linkedin from "./assets/linkedin.svg";
+import TabTech from "../assets/TabTech.svg";
+import tiktok from "../assets/tiktok.svg";
+import twitter from "../assets/twitter.svg";
+import youtube from "../assets/youtube.svg";
+import facebook from "../assets/facebook.svg";
+import instagram from "../assets/instagram.svg";
+import linkedin from "../assets/linkedin.svg";
 import { NavLink } from "react-router-dom";
 
 function Footer() {
@@ -20,7 +20,7 @@ function Footer() {
 
   return (
     <>
-      <section className="flex flex-col justify-center px-[8vw] py-[3vw] items-center bg-[#FAFAFA] w-full sm:gap-[2vw] gap-[4vw]">
+      <section className="flex flex-col justify-center px-[3vw] sm:px-[8vw] py-[3vw] items-center bg-[#FAFAFA] w-full sm:gap-[2vw] gap-[4vw]">
         <div className="grid grid-cols-2 sm:grid-cols-3 justify-center items-center w-full h-auto gap-[5vw]">
           <div className="flex gap-[1vw] flex-col h-full w-auto">
             <div className="flex items-center w-full h-auto gap-[0.5vw]">
@@ -48,7 +48,7 @@ function Footer() {
                       isActive
                         ? "border-[#E1781F] text-[#242424]"
                         : "border-transparent text-[#6D6D6D]"
-                    } hover:border-[#E1781F] hidden`
+                    } hover:border-[#E1781F]`
                   }
                 >
                   <p className="font-inter font-semibold text-sm leading-[140%]">
@@ -91,7 +91,7 @@ function Footer() {
           </p>
         </div>
       </section>
-      <section className="w-full h-[20vw] bg-[url('/NavigationPattern.jpg')]" />
+      <section className="bg-cover bg-center w-full h-[20vw] bg-[url('/NavigationPattern.jpg')]" />
     </>
   );
 }

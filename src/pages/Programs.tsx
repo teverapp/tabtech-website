@@ -1,16 +1,16 @@
-import Title from "./Title";
-import LastSection from "./LastSection";
+import Title from "../components/Title";
+import LastSection from "../components/LastSection";
 function Programs() {
   return (
     <>
       <Title name="Programs" />
-      <section className="flex pr-[10vw] pl-[12vw] text-center sm:text-start justify-center items-center w-full gap-[2vw] mt-[5vw]">
-        <span className="font-inter sm:text-2xl leading-[140%] text-[#4F4F4F]">
+      <section className="flex sm:pr-[10vw] pr-[5vw] sm:pl-[12vw] pl-[5vw] text-center sm:text-start justify-center items-center w-full gap-[2vw] mt-[5vw]">
+        <span className="font-inter text-2xl leading-[140%] text-[#4F4F4F]">
           TABTech’s programs are designed to equip, mentor, fund, and showcase
           Africa’s tech talent, spanning five pillars
         </span>
       </section>
-      <section className="px-[10vw] flex flex-col  justify-center item-center py-[5vw] gap-[10vw]">
+      <section className="sm:px-[10vw] px-[5vw] flex flex-col  justify-center item-center py-[5vw] gap-[10vw]">
         <div className="grid grid-cols-1 sm:grid-cols-2 justify-center items-center w-full gap-[2vw]">
           <div className="w-full h-[60vw] flex sm:hidden items-center justify-center">
             <div className="bg-center w-full h-full bg-cover bg-[url('/Programs1.jpg')]" />

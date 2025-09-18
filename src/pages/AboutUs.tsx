@@ -1,4 +1,4 @@
-import Title from "./Title";
+import Title from "../components/Title";
 import { Link as ScrollLink } from "react-scroll";
 import { Link as RouterLink } from "react-router-dom";
 
@@ -56,9 +56,12 @@ function AboutUs() {
   return (
     <>
       <Title name="About us" />
-      <section className="grid grid-cols-2 px-[10vw] pt-[6vw] w-full gap-[4vw] justify-center items-center">
+      <section className="grid grid-cols-1 sm:grid-cols-2 sm:px-[10vw] px-[5vw] pt-[6vw] w-full gap-[4vw] justify-center items-center">
+        <div className="w-full h-[80vw] flex sm:hidden items-center justify-center ">
+          <div className="bg-cover w-full h-full bg-center bg-[url('/FirstAboutImage.jpg')]" />
+        </div>
         <div className="flex justify-center items-start flex-col w-full h-auto gap-[1vw]">
-          <p className="font-inter sm:text-xl text-sm leading-[140%] text-[#4F4F4F]">
+          <p className="font-inter text-xl leading-[140%] text-[#4F4F4F]">
             By 2050, Africa will have the largest youth population in the world,
             with millions of designers, engineers, innovators, entrepreneurs,
             product managers, and problem-solvers. Yet too many brilliant ideas
@@ -66,10 +69,10 @@ function AboutUs() {
             credentials is fragmented. Talents remain under-recognized.
             Potential is left untapped.
           </p>
-          <p className="text-[#4F4F4F] font-inter text-sm sm:text-xl leading-[140%]">
+          <p className="text-[#4F4F4F] font-inter text-xl leading-[140%]">
             TABTech exists to change that.
           </p>
-          <p className="text-[#4F4F4F] font-inter sm:text-xl text-sm leading-[140%]">
+          <p className="text-[#4F4F4F] font-inter text-xl leading-[140%]">
             We are a nonprofit technology ecosystem enabler, connecting Africa’s
             tech professionals, startups, educators, and investors. Our programs
             focus on building solutions for Africa, by Africa, fostering a
@@ -77,19 +80,19 @@ function AboutUs() {
             necessary.
           </p>
         </div>
-        <div className="w-full h-full flex items-center justify-center ">
+        <div className="w-full sm:flex h-full hidden flex items-center justify-center ">
           <div className="bg-cover w-full h-full bg-center bg-[url('/FirstAboutImage.jpg')]" />
         </div>
       </section>
       <section
         id="about-section"
-        className="flex flex-col pt-[5vw] gap-[2vw] px-[10vw] justify-center items-center w-full"
+        className="flex flex-col pt-[5vw] gap-[2vw] px-[5vw] sm:px-[10vw] justify-center items-center w-full"
       >
         <div className="bg-[#F9E8CC] flex justify-center px-[10vw] py-[2vw] items-center flex-col w-full gap-[1vw] text-center">
           <span className="font-anybody font-semibold text-2xl text-[#242424]">
             Our vision
           </span>
-          <span className="font-inter text-lg sm:text-xl leading-[140%] text-[#4F4F4F]">
+          <span className="font-inter text-xl leading-[140%] text-[#4F4F4F]">
             A unified, forward-thinking tech ecosystem where Africa’s talents
             collaborate across disciplines, break silos, and lead
             self-sustaining innovation by 2030.
@@ -99,14 +102,14 @@ function AboutUs() {
           <span className="font-anybody font-semibold text-2xl text-[#242424]">
             Our mission
           </span>
-          <span className="font-inter text-lg sm:text-xl leading-[140%] text-[#4F4F4F]">
+          <span className="font-inter text-xl leading-[140%] text-[#4F4F4F]">
             A unified, forward-thinking tech ecosystem where Africa’s talents
             collaborate across disciplines, break silos, and lead
             self-sustaining innovation by 2030.
           </span>
         </div>
       </section>
-      <section className="grid sm:grid-cols-2 grid-cols-1 justify-center item-center w-full mt-[8vw] px-[10vw]">
+      <section className="grid sm:grid-cols-2 grid-cols-1 justify-center item-center w-full mt-[8vw] px-[5vw] sm:px-[10vw]">
         <div className="w-full h-[60vw] flex items-center justify-center">
           <div className="w-full h-full bg-cover bg-[url('/SecondAboutImage.jpg')] bg-center" />
         </div>
@@ -117,7 +120,7 @@ function AboutUs() {
           <div className="w-full h-fit gap-5">
             {coreValues.map((items, index) => (
               <li key={index} className="flex">
-                <p className="text-[#4F4F4F] font-inter text-lg sm:text-xl">
+                <p className="text-[#4F4F4F] font-inter text-xl">
                   <strong className="font-bold">{items.point}</strong>&nbsp;
                   {items.detail}
                 </p>

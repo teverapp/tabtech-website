@@ -1,17 +1,19 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import AboutUs from "./AboutUs";
-import Navigationbar from "./Navigationbar";
-import Programs from "./Programs";
-import LandingPage from "./LandingPage";
-import Footer from "./Footer";
-import Shows from "./Shows";
-import Impact from "./Impact";
-import GetInvolved from "./GetInvolved";
-import Donate from "./Donate";
-import Contact from "./Contact";
+import AboutUs from "./pages/AboutUs";
+import Navigationbar from "./components/Navigationbar.tsx";
+import Programs from "./pages/Programs.tsx";
+import LandingPage from "./pages/LandingPage.tsx";
+import Footer from "./components/Footer.tsx";
+import Shows from "./pages/Shows.tsx";
+import Impact from "./pages/Impact";
+import ScrollToTop from "./components/ScrollToTop.tsx";
+import GetInvolved from "./pages/GetInvolved.tsx";
+import Donate from "./pages/Donate";
+import Contact from "./pages/Contact";
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Navigationbar />
       <Routes>
         <Route path="/" element={<LandingPage />} />

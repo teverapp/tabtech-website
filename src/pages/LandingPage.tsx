@@ -1,5 +1,5 @@
 //import { useState } from "react";
-import LastSection from "./LastSection";
+import LastSection from "../components/LastSection";
 import { Link } from "react-router-dom";
 
 function LandingPage() {
@@ -42,7 +42,7 @@ function LandingPage() {
               <span className="text-4xl lg:text-6xl font-anybody font-semibold text-center">
                 Shifting Mindsets, <br /> Accelerating Africa’s Innovation.
               </span>
-              <span className="w-full h-auto font-inter text-xl sm:text-2xl leading-[100%] text-center text-[#4F4F4F]">
+              <span className="w-full h-auto font-inter text-2xl leading-[100%] text-center text-[#4F4F4F]">
                 By 2050, Africa will lead the world in youth talent, yet too
                 many
                 <br /> ideas stall without mentorship, funding, and recognition.
@@ -149,10 +149,10 @@ function LandingPage() {
                 <div className="grid justify-center items-center grid-col-1 w-fit h-auto gap-[2vw]">
                   <div className="w-full sm:h-[12vw] h-[20vw] bg-[#E7E7E7]" />
                   <div className="flex justify-center flex-col w-fit h-auto gap-[1vw]">
-                    <span className="font-anybody font-semibold sm:text-2xl text-xl leading-[100%]">
+                    <span className="font-anybody font-semibold text-2xl leading-[100%]">
                       {items.title}
                     </span>
-                    <span className="font-inter italic text-base sm:text-lg leading-[100%]">
+                    <span className="font-inter italic text-lg leading-[100%]">
                       {items.detail1}
                     </span>
                     <span className="font-inter leading-[100%] text-sm">

@@ -1,4 +1,4 @@
-import TabTech from "./assets/TabTech.svg";
+import TabTech from "../assets/TabTech.svg";
 import { NavLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
@@ -75,7 +75,7 @@ function Navigationbar() {
                 } lg:hidden`
               }
             >
-              <p className="font-inter font-semibold leading-none text-center text-sm text-[#6D6D6D]">
+              <p className="font-inter font-semibold leading-none text-center text-[#6D6D6D]">
                 {item.title}
               </p>
             </NavLink>
