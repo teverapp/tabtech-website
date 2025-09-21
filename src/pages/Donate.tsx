@@ -1,24 +1,53 @@
 import Title from "../components/Title";
 import dropdown from "../assets/dropdown.svg";
 import LastSection from "../components/LastSection";
+import { motion } from "framer-motion";
 function Donate() {
   return (
     <>
       <Title name="Donate to TABTech" />
       <section className="text-[#4F4F4F] text-center sm:text-start flex w-full px-[5vw] sm:px-[10vw] gap-[2vw] mt-[5vw] flex-col">
-        <span className="font-inter text-2xl leading-[140%]">
+        <motion.span
+          whileHover={{ scale: 1.08 }}
+          transition={{
+            duration: 0.3,
+            ease: "easeInOut",
+          }}
+          className="font-inter text-2xl leading-[140%]"
+        >
           Africa’s tech future is being built today by young innovators,
           designers, engineers, and entrepreneurs across the continent.But too
           many ideas stall before they start.
-        </span>
-        <span className="font-inter text-2xl leading-[140%]">
+        </motion.span>
+        <motion.span
+          whileHover={{ scale: 1.08 }}
+          transition={{
+            duration: 0.3,
+            ease: "easeInOut",
+          }}
+          className="font-inter text-2xl leading-[140%]"
+        >
           Your support helps break barriers and create pathways for Africa’s
           brightest talents.
-        </span>
+        </motion.span>
       </section>
       <section className="grid grid-cols-1 sm:grid-cols-2 justify-center items-center w-full gap-[5vw] px-[10vw] sm:mt-[5vw] mt-[10vw]">
-        <div className="w-full sm:hidden h-[60vw] bg-[#E7E7E7]" />
-        <div className="flex w-full gap-[2vw] flex-col pr-[2vw]">
+        <motion.div
+          whileHover={{ scale: 1.08 }}
+          transition={{
+            duration: 0.3,
+            ease: "easeInOut",
+          }}
+          className="w-full sm:hidden h-[60vw] bg-[#E7E7E7]"
+        />
+        <motion.div
+          whileHover={{ scale: 1.08 }}
+          transition={{
+            duration: 0.3,
+            ease: "easeInOut",
+          }}
+          className="flex w-full gap-[2vw] flex-col pr-[2vw]"
+        >
           <span className="font-anybody font-semibold text-3xl leading-[120%] text-[#242424]">
             Why Donate?
           </span>
@@ -57,15 +86,29 @@ function Donate() {
               </li>
             </ul>
           </div>
-        </div>
-        <div className="w-full hidden h-full sm:flex bg-[#E7E7E7]" />
+        </motion.div>
+        <motion.div
+          whileHover={{ scale: 1.08 }}
+          transition={{
+            duration: 0.3,
+            ease: "easeInOut",
+          }}
+          className="w-full hidden h-full sm:flex bg-[#E7E7E7]"
+        />
       </section>
       <section className="flex pt-[7vw] pb-[5vw] px-[5vw] sm:px-[20vw] flex-col justify-center items-center mt-[10vw] w-full mt-[10vw] sm:mt-[5vw] bg-[#FDF7ED] gap-[2vw]">
         <span className="font-semibold font-anybody text-[#242424] text-3xl leading-[120%]">
           Ways to give
         </span>
         <div className="grid grid-cols-1 sm:grid-cols-2 w-full flex flex-col justify-center items-center gap-[2vw]">
-          <div className="flex px-[2vw] sm:px-[1vw] pt-[1vw] flex-col w-full bg-[#F9E8CC] h-[40vw] pb-[4vw] sm:h-full">
+          <motion.div
+            whileHover={{ scale: 1.08 }}
+            transition={{
+              duration: 0.3,
+              ease: "easeInOut",
+            }}
+            className="flex px-[2vw] sm:px-[1vw] pt-[1vw] flex-col w-full bg-[#F9E8CC] h-[30vw] pb-[4vw] sm:h-full"
+          >
             <span className="font-anybody font-semibold text-xl">
               One-time donation
             </span>
@@ -73,8 +116,15 @@ function Donate() {
               Make an immediate <br />
               impact today.
             </span>
-          </div>
-          <div className="flex px-[2vw] sm:px-[1vw] pt-[1vw] pb-[4vw] flex-col w-full bg-[#F9E8CC] sm:h-full h-[40vw]">
+          </motion.div>
+          <motion.div
+            whileHover={{ scale: 1.08 }}
+            transition={{
+              duration: 0.3,
+              ease: "easeInOut",
+            }}
+            className="flex px-[2vw] sm:px-[1vw] pt-[1vw] pb-[4vw] flex-col w-full bg-[#F9E8CC] sm:h-full h-[30vw]"
+          >
             <span className="font-anybody text-[#242424] font-semibold text-xl">
               Monthly giving
             </span>
@@ -83,16 +133,30 @@ function Donate() {
               partner in Africa’s tech <br />
               transformation.
             </span>
-          </div>
-          <div className="flex sm:px-[1vw] pt-[1vw] px-[2vw] pb-[4vw] flex-col w-full bg-[#F9E8CC] sm:h-full h-[40vw]">
+          </motion.div>
+          <motion.div
+            whileHover={{ scale: 1.08 }}
+            transition={{
+              duration: 0.3,
+              ease: "easeInOut",
+            }}
+            className="flex sm:px-[1vw] pt-[1vw] px-[2vw] pb-[4vw] flex-col w-full bg-[#F9E8CC] sm:h-full h-[30vw]"
+          >
             <span className="font-anybody font-semibold text-xl">
               Corporate & institutional giving
             </span>
             <span className="font-inter text-lg text-[#4F4F4F] leading-[140%]">
               Sponsor programs, events, or infrastructure to scale your impact.
             </span>
-          </div>
-          <div className="flex sm:px-[1vw] px-[2vw] pt-[1vw] pb-[4vw] flex-col w-full bg-[#F9E8CC] sm:h-full h-[40vw]">
+          </motion.div>
+          <motion.div
+            whileHover={{ scale: 1.08 }}
+            transition={{
+              duration: 0.3,
+              ease: "easeInOut",
+            }}
+            className="flex sm:px-[1vw] px-[2vw] pt-[1vw] pb-[4vw] flex-col w-full bg-[#F9E8CC] sm:h-full h-[30vw]"
+          >
             <span className="font-anybody text-[#242424] font-semibold text-xl">
               In-kind support
             </span>
@@ -103,10 +167,17 @@ function Donate() {
               <br />
               empower emerging talent.
             </span>
-          </div>
+          </motion.div>
         </div>
       </section>
-      <section className="w-[82%] p-[4vw] mt-[5vw] border-1 border-[#E7E7E7] mx-[8vw] gap-[2vw] flex justify-center items-center flex-col">
+      <motion.section
+        whileHover={{ scale: 1.08 }}
+        transition={{
+          duration: 0.3,
+          ease: "easeInOut",
+        }}
+        className="text-center sm:text-start w-[82%] p-[4vw] mt-[5vw] border-1 border-[#E7E7E7] mx-[8vw] gap-[2vw] flex justify-center items-center flex-col"
+      >
         <span className="font-anybody font-semibold text-2xl text-[#4F4F4F] leading-[140%]">
           Transparency & accountability
         </span>
@@ -115,10 +186,24 @@ function Donate() {
           and impact reports are shared regularly. Your support directly funds
           programs that unlock Africa’s tech potential.
         </span>
-      </section>
+      </motion.section>
       <section className="sm:px-[10vw] px-[5vw] py-[5vw] grid grid-cols-1 sm:grid-cols-2 gap-[4vw] w-full justify-center items-center">
-        <div className="lg:hidden flex w-full h-[100vw] bg-[#E7E7E7]" />
-        <div className="flex flex-col justify-center  w-full h-full p-[2vw] gap-[5vw] bg-[#FDF7ED]">
+        <motion.div
+          whileHover={{ scale: 1.08 }}
+          transition={{
+            duration: 0.3,
+            ease: "easeInOut",
+          }}
+          className="lg:hidden flex w-full h-[100vw] bg-[#E7E7E7]"
+        />
+        <motion.div
+          whileHover={{ scale: 1.08 }}
+          transition={{
+            duration: 0.3,
+            ease: "easeInOut",
+          }}
+          className="flex flex-col justify-center  w-full h-full p-[2vw] gap-[5vw] bg-[#FDF7ED]"
+        >
           <span className="font-inter font-bold text-xl leading-[120%]">
             Donation form
           </span>
@@ -201,15 +286,22 @@ function Donate() {
             </div>
             <button
               type="submit"
-              className="mr-auto px-[4vw] py-[1vw] cursor-pointer mt-[3vw] sm:mt-[1vw] bg-[#E1781F]"
+              className="mr-auto hover:bg-[#ff6200] px-[4vw] py-[1vw] cursor-pointer mt-[3vw] sm:mt-[1vw] bg-[#E1781F]"
             >
               <p className="font-inter font-semibold text-base text-[#242424]">
                 Submit
               </p>
             </button>
           </form>
-        </div>
-        <div className="lg:flex hidden w-full h-full bg-[#E7E7E7]" />
+        </motion.div>
+        <motion.div
+          whileHover={{ scale: 1.08 }}
+          transition={{
+            duration: 0.3,
+            ease: "easeInOut",
+          }}
+          className="lg:flex hidden w-full h-full bg-[#E7E7E7]"
+        />
       </section>
       <LastSection />
     </>

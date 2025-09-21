@@ -1,21 +1,44 @@
 import Title from "../components/Title";
 import LastSection from "../components/LastSection";
+import { motion } from "framer-motion";
 function Programs() {
   return (
     <>
       <Title name="Programs" />
       <section className="flex sm:pr-[10vw] pr-[5vw] sm:pl-[12vw] pl-[5vw] text-center sm:text-start justify-center items-center w-full gap-[2vw] mt-[5vw]">
-        <span className="font-inter text-2xl leading-[140%] text-[#4F4F4F]">
-          TABTech’s programs are designed to equip, mentor, fund, and showcase
-          Africa’s tech talent, spanning five pillars
-        </span>
+        <motion.div
+          whileHover={{ scale: 1.1 }}
+          transition={{
+            duration: 0.3,
+            ease: "easeInOut",
+          }}
+        >
+          <span className="font-inter text-2xl leading-[140%] text-[#4F4F4F]">
+            TABTech’s programs are designed to equip, mentor, fund, and showcase
+            Africa’s tech talent, spanning five pillars
+          </span>
+        </motion.div>
       </section>
       <section className="sm:px-[10vw] px-[5vw] flex flex-col  justify-center item-center py-[5vw] gap-[10vw]">
         <div className="grid grid-cols-1 sm:grid-cols-2 justify-center items-center w-full gap-[2vw]">
-          <div className="w-full h-[60vw] flex sm:hidden items-center justify-center">
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            transition={{
+              duration: 0.3,
+              ease: "easeInOut",
+            }}
+            className="w-full h-[60vw] flex sm:hidden items-center justify-center"
+          >
             <div className="bg-center w-full h-full bg-cover bg-[url('/Programs1.jpg')]" />
-          </div>
-          <div className="flex-col flex gap-[1vw] p-[2vw]">
+          </motion.div>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            transition={{
+              duration: 0.3,
+              ease: "easeInOut",
+            }}
+            className="flex-col flex gap-[1vw] p-[2vw]"
+          >
             <span className="font-anybody font-semibold text-3xl leading-[120%] text-[#242424]">
               Talent pipeline & skills development
             </span>
@@ -49,14 +72,35 @@ function Programs() {
                 </li>
               </ul>
             </div>
-          </div>
-          <div className="w-full h-full hidden sm:flex items-center justify-center">
+          </motion.div>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            transition={{
+              duration: 0.3,
+              ease: "easeInOut",
+            }}
+            className="w-full h-full hidden sm:flex items-center justify-center"
+          >
             <div className="bg-center w-full h-full bg-cover bg-[url('/Programs1.jpg')]" />
-          </div>
+          </motion.div>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 justify-center items-center w-full gap-[2vw]">
-          <div className="w-full h-[60vw] sm:h-full bg-[#E7E7E7]" />
-          <div className="flex-col flex gap-[1vw] p-[2vw]">
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            transition={{
+              duration: 0.3,
+              ease: "easeInOut",
+            }}
+            className="w-full h-[60vw] sm:h-full bg-[#E7E7E7]"
+          />
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            transition={{
+              duration: 0.3,
+              ease: "easeInOut",
+            }}
+            className="flex-col flex gap-[1vw] p-[2vw]"
+          >
             <span className="font-anybody font-semibold text-3xl leading-[120%] text-[#242424]">
               Mentorship & leadership development
             </span>
@@ -64,7 +108,7 @@ function Programs() {
               <ul className="list-disc pl-6 space-y-2">
                 <li>
                   <p className="font-inter text-[#4F4F4F] text-xl leading-[140%]">
-                    <strong>Startup Mentorship Hub:</strong>: Match early-stage
+                    <strong>Startup Mentorship Hub:</strong> Match early-stage
                     founders with experienced tech leaders.
                   </p>
                 </li>
@@ -90,13 +134,27 @@ function Programs() {
                 </li>
               </ul>
             </div>
-          </div>
+          </motion.div>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 justify-center items-center w-full gap-[2vw]">
-          <div className="w-full h-[60vw] sm:hidden flex items-center justify-center">
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            transition={{
+              duration: 0.3,
+              ease: "easeInOut",
+            }}
+            className="w-full h-[60vw] sm:hidden flex items-center justify-center"
+          >
             <div className="bg-center w-full h-full bg-cover bg-[url('/Programs2.jpg')]" />
-          </div>
-          <div className="flex-col flex gap-[1vw] p-[2vw]">
+          </motion.div>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            transition={{
+              duration: 0.3,
+              ease: "easeInOut",
+            }}
+            className="flex-col flex gap-[1vw] p-[2vw]"
+          >
             <span className="font-anybody font-semibold text-3xl leading-[120%] text-[#242424]">
               Innovation & ecosystem building
             </span>
@@ -129,14 +187,35 @@ function Programs() {
                 </li>
               </ul>
             </div>
-          </div>
-          <div className="w-full h-full hidden sm:flex items-center justify-center">
+          </motion.div>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            transition={{
+              duration: 0.3,
+              ease: "easeInOut",
+            }}
+            className="w-full h-full hidden sm:flex items-center justify-center"
+          >
             <div className="bg-center w-full h-full bg-cover bg-[url('/Programs2.jpg')]" />
-          </div>
+          </motion.div>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 justify-center items-center w-full gap-[2vw] h-full">
-          <div className="w-full h-[60vw] sm:h-full bg-[#E7E7E7]" />
-          <div className="flex-col flex gap-[1vw] p-[2vw]">
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            transition={{
+              duration: 0.3,
+              ease: "easeInOut",
+            }}
+            className="w-full h-[60vw] sm:h-full bg-[#E7E7E7]"
+          />
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            transition={{
+              duration: 0.3,
+              ease: "easeInOut",
+            }}
+            className="flex-col flex gap-[1vw] p-[2vw]"
+          >
             <span className="font-anybody font-semibold text-3xl leading-[120%] text-[#242424]">
               Funding & investment readiness
             </span>
@@ -170,11 +249,25 @@ function Programs() {
                 </li>
               </ul>
             </div>
-          </div>
+          </motion.div>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 justify-center items-center w-full gap-[2vw]">
-          <div className="flex sm:hidden w-full h-[60vw] bg-[#E7E7E7]" />
-          <div className="flex-col flex gap-[1vw] p-[2vw]">
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            transition={{
+              duration: 0.3,
+              ease: "easeInOut",
+            }}
+            className="flex sm:hidden w-full h-[60vw] bg-[#E7E7E7]"
+          />
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            transition={{
+              duration: 0.3,
+              ease: "easeInOut",
+            }}
+            className="flex-col flex gap-[1vw] p-[2vw]"
+          >
             <span className="font-anybody font-semibold text-3xl leading-[120%] text-[#242424]">
               Recognition & storytelling
             </span>
@@ -207,8 +300,15 @@ function Programs() {
                 </li>
               </ul>
             </div>
-          </div>
-          <div className="sm:flex hidden w-full h-full bg-[#E7E7E7]" />
+          </motion.div>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            transition={{
+              duration: 0.3,
+              ease: "easeInOut",
+            }}
+            className="sm:flex hidden w-full h-full bg-[#E7E7E7]"
+          />
         </div>
       </section>
       <LastSection />

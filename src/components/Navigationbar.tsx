@@ -1,5 +1,5 @@
 import TabTech from "../assets/TabTech.svg";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 function Navigationbar() {
@@ -24,12 +24,15 @@ function Navigationbar() {
           >
             {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
-          <div className="flex w-[10vw] h-full items-center justify-center">
+          <Link
+            to="/"
+            className="flex cursor-pointer w-[10vw] h-full items-center justify-center"
+          >
             <img src={TabTech} alt="TabTechLogo" />
             <p className="font-bold text-sm leading-none text-center font-inter h-auto w-auto text-[#242424] text-xl">
               TABTECH
             </p>
-          </div>
+          </Link>
           {sections.map((item, index) => (
             <NavLink
               key={index}

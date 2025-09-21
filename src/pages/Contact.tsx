@@ -1,13 +1,28 @@
 import Title from "../components/Title";
 import LastSection from "../components/LastSection";
+import { motion } from "framer-motion";
 function Contact() {
   return (
     <>
       <Title name="Contact" />
       <section className="grid sm:grid-cols-2 grid-cols-1 gap-[2vw] w-full py-[5vw] px-[5vw] sm:px-[10vw] justify-center items-center">
-        <div className="sm:hidden flex w-full h-[100vw] bg-[#E7E7E7]" />
-        <div className="flex flex-col justify-center w-full p-[2vw] gap-[5vw] sm:gap-[2vw] items-center">
-          <div className="gap-[2vw] flex flex-col justify-center w-full text-[#4F4F4F] border-b-1 border-b-[#E7E7E7] pb-[1vw]">
+        <motion.div
+          whileHover={{ scale: 1.08 }}
+          transition={{
+            duration: 0.3,
+            ease: "easeInOut",
+          }}
+          className="sm:hidden flex w-full h-[100vw] bg-[#E7E7E7]"
+        />
+        <motion.div
+          whileHover={{ scale: 1.08 }}
+          transition={{
+            duration: 0.3,
+            ease: "easeInOut",
+          }}
+          className="flex flex-col justify-center w-full p-[2vw] gap-[5vw] sm:gap-[2vw] items-center"
+        >
+          <div className="text-center sm:text-start gap-[2vw] flex flex-col justify-center w-full text-[#4F4F4F] border-b-1 border-b-[#E7E7E7] pb-[1vw] sm:pt-0 pt-[3vw] ">
             <span className="font-inter text-xl leading-[120%]">
               We’d love to hear from you. Reach out to learn more, explore
               collaborations, or offer strategic guidance.
@@ -87,7 +102,7 @@ function Contact() {
               </div>
               <button
                 type="submit"
-                className="cursor-pointer mr-auto px-[4vw] py-[1vw] mt-[3vw] sm:mt-[1vw] bg-[#E1781F]"
+                className="cursor-pointer hover:bg-[#ff6200] mr-auto px-[4vw] py-[1vw] mt-[3vw] sm:mt-[1vw] bg-[#E1781F]"
               >
                 <p className="font-inter font-semibold text-base text-[#242424]">
                   Submit
@@ -95,8 +110,15 @@ function Contact() {
               </button>
             </form>
           </div>
-        </div>
-        <div className="hidden sm:flex w-full h-full bg-[#E7E7E7]" />
+        </motion.div>
+        <motion.div
+          whileHover={{ scale: 1.08 }}
+          transition={{
+            duration: 0.3,
+            ease: "easeInOut",
+          }}
+          className="hidden sm:flex w-full h-full bg-[#E7E7E7]"
+        />
       </section>
       <LastSection />
     </>

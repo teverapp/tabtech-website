@@ -1,6 +1,7 @@
 //import { useState } from "react";
 import LastSection from "../components/LastSection";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 function LandingPage() {
   const options = [
@@ -36,8 +37,15 @@ function LandingPage() {
   return (
     <>
       <section className="flex items-center flex-col justify-center w-full bg-[url('/Pattern1.jpg')] bg-cover bg-center">
-        <div className="flex items-center px-[4vw] py-[15vw] justify-center w-full h-full inset-0 bg-[#FFFFFF]/90">
-          <div className="flex justify-center items-center flex-col w-full h-auto gap-[4vw]">
+        <div className="flex items-center px-[4vw] pt-[15vw] pb-[10vw] justify-center w-full h-full inset-0 bg-[#FFFFFF]/97">
+          <motion.div
+            whileHover={{ scale: 1.08 }}
+            transition={{
+              duration: 0.3,
+              ease: "easeInOut",
+            }}
+            className="flex justify-center items-center flex-col w-full h-auto gap-[4vw]"
+          >
             <div className="flex flex-col justify-between w-full h-auto gap-[2vw] items-center">
               <span className="text-4xl lg:text-6xl font-anybody font-semibold text-center">
                 Shifting Mindsets, <br /> Accelerating Africa’s Innovation.
@@ -55,15 +63,15 @@ function LandingPage() {
                   key={index}
                   className={`${
                     items.title === "Get involved"
-                      ? "bg-black"
-                      : "bg-transparent"
+                      ? "bg-black hover:bg-[#E1781F] border-transparent"
+                      : "bg-transparent hover:border-[#E1781F]"
                   } w-full h-full text-nowrap border-1 p-[1vw] gap-[2vw]`}
                 >
                   <p
                     className={`${
                       items.title === "Get involved"
                         ? "text-white"
-                        : "text-black"
+                        : "text-black hover:text-[#E1781F]"
                     } font-inter text-base font-semibold`}
                   >
                     {items.title}
@@ -71,21 +79,30 @@ function LandingPage() {
                 </Link>
               ))}
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
       <section className="bg-center bg-cover w-full bg-black bg-[url('/NavigationPattern.jpg')] bg-cover bg-center">
         <div className="flex w-full px-[2vw] py-[8vw] items-center justify-center inset-0 bg-[#242424E5]/90 flex flex-col gap-[2vw] text-center">
-          <span className="font-anybody text-[#E1781F] font-semibold text-4xl leading-[120%]">
-            TABTech bridges these gaps.
-          </span>
-          <span className="font-inter text-[#F9E8CC] text-xl leading-[100%]">
-            We connect Africa’s tech professionals, startups, investors,
-            <br />
-            and educators to transform promising ideas into scalable,
-            <br />
-            sustainable solutions, designed for Africa’s realities.
-          </span>
+          <motion.div
+            whileHover={{ scale: 1.08 }}
+            transition={{
+              duration: 0.3,
+              ease: "easeInOut",
+            }}
+            className="flex flex-col gap-[1vw]"
+          >
+            <span className="font-anybody text-[#E1781F] font-semibold text-4xl leading-[120%]">
+              TABTech bridges these gaps.
+            </span>
+            <span className="font-inter text-[#F9E8CC] text-xl leading-[100%]">
+              We connect Africa’s tech professionals, startups, investors,
+              <br />
+              and educators to transform promising ideas into scalable,
+              <br />
+              sustainable solutions, designed for Africa’s realities.
+            </span>
+          </motion.div>
         </div>
       </section>
       <section className="grid grid-cols-[1fr_6fr_1fr] bg-[#242424] justify-center items-center w-full">
@@ -96,53 +113,90 @@ function LandingPage() {
               Our impact goals by 2030
             </p>
           </div>
-          <div className="grid grid-cols-1 justify-center w-fit h-auto gap-5">
+          <div className="text-center sm:text-start grid grid-cols-1 justify-center w-fit h-auto gap-5">
             <div className="grid justify-center w-fit h-auto grid-cols-1 sm:grid-cols-3 gap-5">
-              <div className="border-[#E1781F] w-full h-auto p-5 gap-[2vw] border sm:h-full border-1">
+              <motion.div
+                whileHover={{ scale: 1.08 }}
+                transition={{
+                  duration: 0.3,
+                  ease: "easeInOut",
+                }}
+                className="border-[#E1781F] w-full h-auto p-5 gap-[2vw] border sm:h-full border-1"
+              >
                 <p className="font-inter text-[#F9E8CC] font-semibold text-[16px] leading-[140%]">
-                  Train and certify tens of thousands of <br />
-                  tech professionals in Africa
+                  Train and certify tens of thousands of tech professionals in
+                  Africa
                 </p>
-              </div>
-              <div className="border-[#E1781F] w-full h-auto p-5 gap-8 sm:h-full border border-1">
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.08 }}
+                transition={{
+                  duration: 0.3,
+                  ease: "easeInOut",
+                }}
+                className="border-[#E1781F] w-full h-auto p-5 gap-8 sm:h-full border border-1"
+              >
                 <p className="font-inter text-[#F9E8CC] font-semibold text-[16px] leading-[140%]">
-                  Support 100+ startups to scale and <br />
-                  secure investment
+                  Support 100+ startups to scale and secure investment
                 </p>
-              </div>
-              <div className="border-[#E1781F] w-full h-auto sm:h-full p-5 gap-8 border border-1">
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.08 }}
+                transition={{
+                  duration: 0.3,
+                  ease: "easeInOut",
+                }}
+                className="border-[#E1781F] w-full h-auto sm:h-full p-5 gap-8 border border-1"
+              >
                 <p className="font-inter text-[#F9E8CC] font-semibold text-[16px] leading-[140%]">
-                  Create cross-border accreditation for <br />
-                  tech talent
+                  Create cross-border accreditation for tech talent
                 </p>
-              </div>
+              </motion.div>
             </div>
             <div className="sm:px-[12vw] grid w-full grid-cols-1 sm:grid-cols-2 h-auto gap-[2vw]">
-              <div className="border-[#E1781F] w-full sm:h-full h-auto p-5 gap-8 border border-1">
+              <motion.div
+                whileHover={{ scale: 1.08 }}
+                transition={{
+                  duration: 0.3,
+                  ease: "easeInOut",
+                }}
+                className="border-[#E1781F] w-full sm:h-full h-auto p-5 gap-8 border border-1"
+              >
                 <p className="font-inter text-[#F9E8CC] font-semibold text-[16px] leading-[140%]">
-                  Establish trusted platforms connecting <br />
-                  innovators, investors, and educators
+                  Establish trusted platforms connecting innovators, investors,
+                  and educators
                 </p>
-              </div>
-              <div className="border-[#E1781F] w-full sm:h-full h-auto p-5 gap-8 border border-1">
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.08 }}
+                transition={{
+                  duration: 0.3,
+                  ease: "easeInOut",
+                }}
+                className="border-[#E1781F] w-full sm:h-full h-auto p-5 gap-8 border border-1"
+              >
                 <p className="font-inter text-[#F9E8CC] font-semibold text-[16px] leading-[140%]">
-                  Position Africa’s tech solutions on the <br />
-                  global stage
+                  Position Africa’s tech solutions on the global stage
                 </p>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>
         <div className="bg-center bg-cover h-full bg-[url('/NavigationPattern.jpg')]" />
       </section>
       <section className="w-full bg-[#FAFAFA] bg-[url('/Pattern1.jpg')] bg-cover bg-center">
-        <div className="p-[8vw] flex justify-center items-center w-full h-full inset-0 bg-[#FAFAFA]/95 flex-col gap-[4vw]">
+        <div className="text-center sm:text-start p-[8vw] flex justify-center items-center w-full h-full inset-0 bg-[#FAFAFA]/95 flex-col gap-[4vw]">
           <p className="font-anybody font-semibold sm:text-5xl text-4xl leading-[120%] text-[#242424]">
             The stories we tell
           </p>
           <div className="grid justify-center items-center grid-cols-1 sm:grid-cols-2 w-fit h-auto gap-[4vw]">
             {features.map((items, index) => (
-              <div
+              <motion.div
+                whileHover={{ scale: 1.08 }}
+                transition={{
+                  duration: 0.3,
+                  ease: "easeInOut",
+                }}
                 key={index}
                 className="grid justify-center items-center grid-cols-1 w-full bg-white h-auto p-[10vw] sm:p-[3vw] gap-[2vw]"
               >
@@ -160,58 +214,86 @@ function LandingPage() {
                     </span>
                   </div>
                 </div>
-                <Link
-                  to={"./shows"}
-                  className="cursor-pointer flex justify-center items-center w-[40%] h-auto border-1 p-[1vw]"
+                <motion.div
+                  animate={{ scale: [1, 1.1, 1] }}
+                  transition={{
+                    duration: 1.5,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                  }}
                 >
-                  <p className="font-inter font-semibold text-base">
-                    Watch show
-                  </p>
-                </Link>
-              </div>
+                  <Link
+                    to={"./shows"}
+                    className="cursor-pointer flex justify-center items-center w-[40%] h-auto border-1 p-[1vw]"
+                  >
+                    <p className="font-inter font-semibold text-base">
+                      Watch show
+                    </p>
+                  </Link>
+                </motion.div>
+              </motion.div>
             ))}
           </div>
         </div>
       </section>
       <section className="w-full h-[50vw] sm:h-[20vw] bg-cover bg-center bg-[url('/NavigationPattern.jpg')]" />
-      <section className="gap-[4vw] sm:gap-[2vw] flex flex-col justify-center items-center w-full bg-[#FAFAFA] p-[5vw]">
+      <section className="text-center sm:text-start gap-[4vw] sm:gap-[2vw] flex flex-col justify-center items-center w-full bg-[#FAFAFA] p-[5vw]">
         <span className="font-anybody font-semibold text-4xl leading-[120%] text-[#242424]">
           What we do
         </span>
         <div className="grid grid-cols-1 justify-center w-fit h-auto gap-5">
           <div className="grid justify-center w-fit h-auto grid-cols-1 sm:grid-cols-3 gap-5">
             {role1.map((items, index) => (
-              <div
+              <motion.div
+                whileHover={{ scale: 1.08 }}
+                transition={{
+                  duration: 0.3,
+                  ease: "easeInOut",
+                }}
                 key={index}
                 className="w-fit h-auto border-1 border-[#D1D1D1] p-5 gap-2"
               >
                 <p className="text-[#4F4F4F] font-inter font-semibold text-base leading-[140%]">
                   {items}
                 </p>
-              </div>
+              </motion.div>
             ))}
           </div>
           <div className="sm:px-[12vw] grid w-full grid-cols-1 sm:grid-cols-2 h-auto gap-[2vw]">
             {role2.map((items, index) => (
-              <div
+              <motion.div
+                whileHover={{ scale: 1.08 }}
+                transition={{
+                  duration: 0.3,
+                  ease: "easeInOut",
+                }}
                 key={index}
                 className="w-fit h-auto border-1 border-[#D1D1D1] p-[2vw] gap-2"
               >
                 <p className="text-[#4F4F4F] h-auto font-inter font-semibold text-base leading-[140%] ">
                   {items}
                 </p>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
-        <Link
-          to={"./get-involved"}
-          className="cursor-pointer flex justify-center items-center p-[2vw] sm:p-[1vw] bg-[#242424] text-center gap-5"
+        <motion.div
+          animate={{ scale: [1, 1.1, 1] }}
+          transition={{
+            duration: 1.5,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
         >
-          <p className="font-inter font-semibold text-base text-[#F6F6F6]">
-            Get involved
-          </p>
-        </Link>
+          <Link
+            to={"./get-involved"}
+            className="cursor-pointer hover:bg-[#E1781F] flex justify-center items-center p-[2vw] sm:p-[1vw] bg-[#242424] text-center gap-5"
+          >
+            <p className="font-inter font-semibold text-base text-[#F6F6F6]">
+              Get involved
+            </p>
+          </Link>
+        </motion.div>
       </section>
       <LastSection />
     </>
