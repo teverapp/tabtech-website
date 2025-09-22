@@ -2,6 +2,7 @@ import dropdown from "../assets/dropdown.svg";
 import Title from "../components/Title";
 import { useState } from "react";
 import LastSection from "../components/LastSection";
+import { motion } from "framer-motion";
 function GetInvolved() {
   const [isOpen1, setIsOpen1] = useState(false);
   const [isOpen2, setIsOpen2] = useState(false);
@@ -31,9 +32,23 @@ function GetInvolved() {
     <>
       <Title name="Get Involved" />
       <section className="grid sm:grid-cols-2 grid-cols-1 justify-center items-center w-full px-[5vw] sm:px-[10vw] py-[5vw] gap-5">
-        <div className="flex sm:hidden w-full h-[80vw] bg-[#E7E7E7]" />
-        <div className="flex flex-col justify-center items-center w-full p-[2vw] gap-[4vw]">
-          <div className="w-full border-b-1 pb-[4vw] border-[#E7E7E7]">
+        <motion.div
+          whileHover={{ scale: 1.08 }}
+          transition={{
+            duration: 0.3,
+            ease: "easeInOut",
+          }}
+          className="flex sm:hidden w-full h-[80vw] bg-[#E7E7E7]"
+        />
+        <motion.div
+          whileHover={{ scale: 1.08 }}
+          transition={{
+            duration: 0.3,
+            ease: "easeInOut",
+          }}
+          className="flex flex-col justify-center items-center w-full p-[2vw] gap-[4vw]"
+        >
+          <div className="text-center sm:text-start w-full border-b-1 pb-[4vw] border-[#E7E7E7]">
             <span className="w-full font-inter text-[#4F4F4F] text-xl leading-[120%]">
               TABTech is for all tech professionals, innovators, and ecosystem
               builders, from designers and engineers to researchers, product
@@ -235,7 +250,7 @@ function GetInvolved() {
               </div>
               <button
                 type="submit"
-                className="mr-auto cursor-pointer px-[4vw] py-[1vw] mt-[3vw] sm:mt-[1vw] bg-[#E1781F]"
+                className="mr-auto hover:bg-[#ff6200] cursor-pointer px-[4vw] py-[1vw] mt-[3vw] sm:mt-[1vw] bg-[#E1781F]"
               >
                 <p className="font-inter font-semibold text-base text-[#242424]">
                   Submit
@@ -243,8 +258,15 @@ function GetInvolved() {
               </button>
             </form>
           </div>
-        </div>
-        <div className="sm:flex hidden w-full h-full bg-[#E7E7E7]" />
+        </motion.div>
+        <motion.div
+          whileHover={{ scale: 1.08 }}
+          transition={{
+            duration: 0.3,
+            ease: "easeInOut",
+          }}
+          className="sm:flex hidden w-full h-full bg-[#E7E7E7]"
+        />
       </section>
       <LastSection />
     </>
