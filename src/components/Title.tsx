@@ -4,7 +4,7 @@ type TitleProps = {
 
 function Title({ name }: TitleProps) {
   return (
-    <section className="flex justify-between bg-[#242424] w-full flex items-start flex-col h-[25vw]">
+    <section className="flex justify-between pt-[5vw] sm:pt-0 bg-[#242424] w-full flex items-start flex-col h-[30vw] sm:h-[25vw]">
       <div className="flex mt-[3vw] px-[10vw] h-[88%] w-full">
         <span className="font-anybody text-2xl sm:text-5xl mt-[10vw] font-semibold leading-[120%] text-[#E1781F]">
           {name}

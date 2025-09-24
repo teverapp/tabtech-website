@@ -37,16 +37,16 @@ function LandingPage() {
   return (
     <>
       <section className="flex items-center flex-col justify-center w-full bg-[url('/Pattern1.jpg')] bg-cover bg-center">
-        <div className="flex items-center px-[4vw] pt-[15vw] pb-[10vw] justify-center w-full h-full inset-0 bg-[#FFFFFF]/97">
+        <div className="flex items-center px-[4vw] pt-[20vw] sm:pt-[15vw] pb-[10vw] justify-center w-full h-full inset-0 bg-[#FFFFFF]/97">
           <motion.div
             whileHover={{ scale: 1.08 }}
             transition={{
               duration: 0.3,
               ease: "easeInOut",
             }}
-            className="flex justify-center items-center flex-col w-full h-auto gap-[4vw]"
+            className="flex justify-center items-center flex-col w-full h-auto gap-[6vw] sm:gap-[4vw]"
           >
-            <div className="flex flex-col justify-between w-full h-auto gap-[2vw] items-center">
+            <div className="flex flex-col justify-between w-full h-auto gap-[3vw] sm:gap-[2vw] items-center">
               <span className="text-4xl lg:text-6xl font-anybody font-semibold text-center">
                 Shifting Mindsets, <br /> Accelerating Africa’s Innovation.
               </span>
