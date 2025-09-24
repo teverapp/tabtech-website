@@ -224,7 +224,7 @@ function LandingPage() {
                 >
                   <Link
                     to={"./shows"}
-                    className="cursor-pointer flex justify-center items-center w-[40%] h-auto border-1 p-[1vw]"
+                    className="cursor-pointer hover:border-[#E1781F] hover:text-[#E1781F] flex justify-center items-center w-[40%] h-auto border-1 p-[1vw]"
                   >
                     <p className="font-inter font-semibold text-base">
                       Watch show
