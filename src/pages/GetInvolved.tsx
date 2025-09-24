@@ -61,7 +61,7 @@ function GetInvolved() {
                 Choose how you’d like to contribute
               </p>
             </div>
-            <form className="flex flex-col justify-center w-ful gap-[2vw] flex justify-center items-center flex-col p-[2vw] sm:p-0">
+            <form className="flex flex-col justify-center w-ful gap-[4vw] sm:gap-[2vw] flex justify-center items-center flex-col p-[2vw] sm:p-0">
               <div className="flex flex-col justify-between w-full gap-[0.5vw]">
                 <label className="font-inter text-[#242424] font-semibold text-sm leading-[140%]">
                   Full name
