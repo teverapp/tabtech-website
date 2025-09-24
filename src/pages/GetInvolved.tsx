@@ -31,7 +31,7 @@ function GetInvolved() {
   return (
     <>
       <Title name="Get Involved" />
-      <section className="grid sm:grid-cols-2 grid-cols-1 justify-center items-center w-full px-[5vw] sm:px-[10vw] py-[5vw] gap-5">
+      <section className="grid sm:grid-cols-2 grid-cols-1 justify-center items-center w-full px-[2vw] sm:px-[10vw] py-[5vw] gap-5">
         <motion.div
           whileHover={{ scale: 1.08 }}
           transition={{
@@ -61,7 +61,7 @@ function GetInvolved() {
                 Choose how you’d like to contribute
               </p>
             </div>
-            <form className="flex flex-col justify-center w-ful gap-[2vw] flex justify-center items-center flex-col">
+            <form className="flex flex-col justify-center w-ful gap-[2vw] flex justify-center items-center flex-col p-[2vw] sm:p-0">
               <div className="flex flex-col justify-between w-full gap-[0.5vw]">
                 <label className="font-inter text-[#242424] font-semibold text-sm leading-[140%]">
                   Full name
@@ -70,7 +70,7 @@ function GetInvolved() {
                   type="text"
                   placeholder="Name"
                   required
-                  className="text-sm w-full placeholder:text-[#888888] rounded-lg border-[#EFEFEF] border-1 p-[0.7vw] bg-[#FFFFFF]"
+                  className="text-sm w-full placeholder:text-[#888888] rounded-lg border-[#EFEFEF] border-1 p-[2vw] sm:p-[0.7vw] bg-[#FFFFFF]"
                 />
               </div>
               <div className="flex flex-col justify-between w-full gap-[0.5vw]">
@@ -81,7 +81,7 @@ function GetInvolved() {
                   type="email"
                   placeholder="Enter email address"
                   required
-                  className="text-sm w-full placeholder:text-[#888888] border-[#EFEFEF] border-1 p-[0.7vw] bg-[#FFFFFF]"
+                  className="text-sm w-full placeholder:text-[#888888] border-[#EFEFEF] border-1 p-[2vw] sm:p-[0.7vw] bg-[#FFFFFF]"
                 />
               </div>
               <div className="flex flex-col justify-between w-full gap-[0.5vw]">
@@ -91,7 +91,7 @@ function GetInvolved() {
                 <input
                   type="tel"
                   placeholder="Enter phone number"
-                  className="text-sm w-full placeholder:text-[#888888] border-[#EFEFEF] border-1 p-[0.7vw] bg-[#FFFFFF]"
+                  className="text-sm w-full placeholder:text-[#888888] border-[#EFEFEF] border-1 p-[2vw] sm:p-[0.7vw] bg-[#FFFFFF]"
                 />
               </div>
               <div className="flex flex-col justify-between w-full gap-[0.5vw]">
@@ -101,7 +101,7 @@ function GetInvolved() {
                 <input
                   type="text"
                   placeholder="What organization or affiliation are you connected with?"
-                  className="text-sm w-full placeholder:text-[#888888] p-[0.7vw] bg-[#FFFFFF] cursor-pointer"
+                  className="text-sm w-full placeholder:text-[#888888] p-[2vw] sm:p-[0.7vw] bg-[#FFFFFF] cursor-pointer"
                 />
               </div>
               <div className="flex flex-col justify-between w-full gap-[0.5vw]">
@@ -112,7 +112,7 @@ function GetInvolved() {
                   <input
                     type="text"
                     placeholder="Choose all that apply"
-                    className="text-sm w-full placeholder:text-[#888888] rounded-lg border-[#EFEFEF] border-1 p-[0.7vw] bg-[#FFFFFF]"
+                    className="text-sm w-full placeholder:text-[#888888] rounded-lg border-[#EFEFEF] border-1 p-[2vw] sm:p-[0.7vw] bg-[#FFFFFF]"
                   />
                   <div
                     onClick={() => {
@@ -156,7 +156,7 @@ function GetInvolved() {
                   <input
                     type="text"
                     placeholder="Enter your message here"
-                    className="w-full text-sm placeholder:text-[#888888] border-[#EFEFEF] border-1 p-[0.7vw] bg-[#FFFFFF]"
+                    className="w-full text-sm placeholder:text-[#888888] border-[#EFEFEF] border-1 p-[2vw] sm:p-[0.7vw] bg-[#FFFFFF]"
                   />
                 </div>
               </div>
@@ -168,7 +168,7 @@ function GetInvolved() {
                   <input
                     type="text"
                     placeholder="Choose an option"
-                    className="text-sm w-full placeholder:text-[#888888] border-[#EFEFEF] border-1 p-[0.7vw] bg-[#FFFFFF]"
+                    className="text-sm w-full placeholder:text-[#888888] border-[#EFEFEF] border-1 p-[2vw] sm:p-[0.7vw] bg-[#FFFFFF]"
                   />
                   <div
                     onClick={() => {
@@ -212,7 +212,7 @@ function GetInvolved() {
                   <input
                     type="text"
                     placeholder="Choose an option"
-                    className="w-full placeholder:text-[#888888] p-[0.7vw] bg-[#FFFFFF]"
+                    className="w-full placeholder:text-[#888888] p-[2vw] sm:p-[0.7vw] bg-[#FFFFFF]"
                   />
                   <div
                     onClick={() => {
@@ -250,7 +250,7 @@ function GetInvolved() {
               </div>
               <button
                 type="submit"
-                className="mr-auto hover:bg-[#ff6200] cursor-pointer px-[4vw] py-[1vw] mt-[3vw] sm:mt-[1vw] bg-[#E1781F]"
+                className="mr-auto hover:bg-[#ff6200] cursor-pointer sm:px-[4vw] px-[10vw] sm:py-[1vw] py-[4vw] mt-[3vw] sm:mt-[1vw] bg-[#E1781F]"
               >
                 <p className="font-inter font-semibold text-base text-[#242424]">
                   Submit
